@@ -21,12 +21,40 @@
     p {
         font-size: 18px;
     }
+    .ticker {
+    width: 100%;
+    overflow: hidden;
+    background-color: #45465c;
+    padding: 10px 0;
+}
+
+.ticker span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 12s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
     </style>
 
 </head>
 <body>
 
     <header>
+        <div class="ticker">
+        <span>
+            WELCOME, STRANGER! ✦ TAKE A LOOK AROUND ✦
+            DON'T FEED THE PIXELS ✦
+        </span>
+        </div>
         <!-- Top banner -->
     </header>
 
