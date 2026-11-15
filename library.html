@@ -28,8 +28,10 @@
     padding: 10px 0;
 }
 
-.moving-text {
-    animation: slide 10s linear infinite alternate;
+.ticker span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
 }
 @keyframes scroll {
     from {
@@ -67,21 +69,4 @@
     <footer>
         <!-- Music player / credits -->
     </footer>
-<style>
-    body {
-        background-color: #20212b;
-        color: white;
-        font-family: Arial;
-        text-align: center;
-    }
-
-    h1 {
-        color: #ffcc88;
-        font-size: 40px;
-    }
-
-    p {
-        font-size: 18px;
-    }
-</style>
 </body>
