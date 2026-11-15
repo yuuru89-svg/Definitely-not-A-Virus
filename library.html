@@ -28,12 +28,16 @@
     padding: 10px 0;
 }
 
-.ticker span {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scroll 12s linear infinite;
+.ticker-content {
+    display: flex;
+    width: max-content;
+    animation: scroll 15s linear infinite;
 }
 
+.ticker-content span {
+    white-space: nowrap;
+    padding-right: 30px;
+}
 @keyframes scroll {
     from {
         transform: translateX(100%);
@@ -50,10 +54,10 @@
 
     <header>
         <div class="ticker">
-        <span>
-            WELCOME, STRANGER! ✦ TAKE A LOOK AROUND ✦
-            DON'T FEED THE PIXELS ✦
-        </span>
+           <div class="ticker-content">
+             <span>WELCOME, STRANGER! ✦ TAKE A LOOK AROUND ✦ DON'T FEED THE PIXELS ✦</span>
+             <span>WELCOME, STRANGER! ✦ TAKE A LOOK AROUND ✦ DON'T FEED THE PIXELS ✦</span>
+           </div>
         </div>
         <!-- Top banner -->
     </header>
